@@ -4,97 +4,46 @@ import "./routes.css";
 import Card from "../components/Card/Card";
 import background1 from "../components/assets/bakgrund1.jpg";
 
+import bollHome from "../components/assets/bollHome.JPG";
+import CVSkaparenIndex from "../components/assets/CVSkaparenIndex.JPG";
+import teamAIndex from "../components/assets/teamAIndex.JPG";
+
 function Projects() {
   return (
     <div>
       <div
         style={{
           backgroundImage: `url(${background1})`,
-          width: "100vw",
-          height: "85vh",
+          minWidth: "90vw",
+          minHeight: "100vh",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1>These are my projects </h1>
+        <h1 style={{ color: "white", padding: "2rem" }}>
+          Här är ett par av mina projekt
+        </h1>
 
         <Card
-          title="Card Title"
-          imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-          body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos."
+          title="Boll.se"
+          imageUrl={bollHome}
+          body="Gruppuppgift för java. Mycket Javascript, en del HTML och självklart responsiv CSS. 
+          Single-page application."
+          link="https://github.com/FrankAsplund/JS2Grupp9"
         />
         <Card
-          title="Card Title"
-          imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-          body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos."
+          title="CV-skaparen.se"
+          imageUrl={CVSkaparenIndex}
+          body="Individuell uppgift för HTML och CSS. Består av en del Javascript, samt HTML och CSS."
         />
         <Card
-          title="Card Title"
-          imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-          body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos."
+          title="TeamA.se"
+          imageUrl={teamAIndex}
+          body="Gruppuppgift för Arbetsmetodik 2. Består av mycket Javascript, HTML och CSS."
         />
       </div>
     </div>
   );
 }
-
-/* class Projects extends Component {
-  render() {
-    const myStyle = {
-      src: { background1 }, 
-      backgroundImage: "url('../components/assets/bakgrund1.jpg')", 
-      backgroundImage: { background1 },
-      width: "100vw",
-      height: "100vh",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    };
-    return (
-      <div>
-          <div style={{ backgroundImage: `url(${background1})` }}></div>
-        <div style={myStyle}>
-          <h1>These are my projects </h1>
-          <br></br>
-          <br></br>
-          <div>
-            <Card
-              title="Card Title"
-              imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-              body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-            fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-            aut blanditiis minima consequatur temporibus consequuntur vitae
-            explicabo quod, aliquam quos."
-            />
-            <Card
-              title="Card Title"
-              imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-              body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-            fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-            aut blanditiis minima consequatur temporibus consequuntur vitae
-            explicabo quod, aliquam quos."
-            />
-            <Card
-              title="Card Title"
-              imageUrl="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
-              body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-            fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-            aut blanditiis minima consequatur temporibus consequuntur vitae
-            explicabo quod, aliquam quos."
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-} */
 
 export default Projects;

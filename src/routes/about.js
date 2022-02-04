@@ -12,29 +12,28 @@ import Contactcard from "../components/Contactcard/Contactcard";
 
 function About() {
   return (
-    <div>
-      <div
-        style={{
-          backgroundImage: `url(${background1})`,
-          width: "auto",
-          height: "auto",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <Contactcard
-          title="Card Title"
-          body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
-          aut blanditiis minima consequatur temporibus consequuntur vitae
-          explicabo quod, aliquam quos. 
+    <div
+      style={{
+        backgroundImage: `url(${background1})`,
+        minWidth: "90vw",
+        minHeight: "100vh",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="card1">
+        <div className="contactStyle">
+          <Contactcard
+            title="Mitt CV"
+            body="
+          
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
           fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
           aut blanditiis minima consequatur temporibus consequuntur vitae
           explicabo quod, aliquam quos. 
@@ -43,13 +42,44 @@ function About() {
           aut blanditiis minima consequatur temporibus consequuntur vitae
           explicabo quod, aliquam quos. 
 
-          "
-        />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos."
+          />
+        </div>
+        <div className="contactStyle1">
+          <Contactcard
+            title="Mitt personliga brev"
+            body="
+          
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. 
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos. 
+
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+          fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
+          aut blanditiis minima consequatur temporibus consequuntur vitae
+          explicabo quod, aliquam quos."
+          />
+        </div>
+
         <Catcard title="Card Title" imageUrl={IMG_8089} />
         <Catcard title="Card Title" imageUrl={IMG_7989} />
         <Catcard title="Card Title" imageUrl={IMG_8053} />
-        <Catcard title="Card Title" imageUrl={IMG_8247} />
-        <Catcard title="Card Title" imageUrl={IMG_8062} />
       </div>
     </div>
   );

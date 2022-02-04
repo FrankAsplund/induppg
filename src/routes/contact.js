@@ -12,19 +12,18 @@ import background1 from "../components/assets/bakgrund1.jpg";
 
 function Contact() {
   return (
-    <div>
-      <div
-        className="card"
-        style={{
-          backgroundImage: `url(${background1})`,
-          width: "100vw",
-          height: "85vh",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+    <div
+      style={{
+        backgroundImage: `url(${background1})`,
+        minWidth: "90vw",
+        minHeight: "100vh",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="card">
         <Contactcard
-          title="Card Title"
+          title="Om mig"
           body="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
           fuga error quaerat earum, odit veritatis excepturi impedit beatae sint
           aut blanditiis minima consequatur temporibus consequuntur vitae

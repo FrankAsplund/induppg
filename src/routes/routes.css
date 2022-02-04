@@ -13,3 +13,14 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+.card1 {
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
