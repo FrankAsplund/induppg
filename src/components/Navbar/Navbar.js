@@ -18,15 +18,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <Link to={MenuItems[0]}></Link>
-
-        <h1 className="navbar-logo" onClick={homeBtn}>
-          Frank Asplund
-        </h1>
+        <a className="navbar-logo">
+          <Link to="/">Frank Asplund</Link>
+        </a>
         <img
           src={logga}
           style={{ height: 70, width: 200, margin: 10, cursor: "pointer" }}
-          onClick={homeBtn}
         />
         <div className="menu-icon" onClick={this.handleClick}>
           <i

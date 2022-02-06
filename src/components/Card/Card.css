@@ -11,6 +11,7 @@
   font-family: "Montserrat", sans-serif;
   color: ghostwhite;
   margin: 1rem;
+  margin-bottom: 3rem;
   width: 400px;
   overflow: hidden;
   box-shadow: 0px 0px 15px 5px black;
@@ -42,7 +43,7 @@
 
 .card-title > h3,
 p {
-  margin-top: 10px;
+  margin: 10px;
   padding: 0;
 }
 
@@ -64,4 +65,11 @@ p {
   border: none;
   transition: 0.5s;
   animation: ease-in-out;
+}
+
+@media screen and (max-width: 960px) {
+  .card-container {
+    display: grid;
+    float: none;
+  }
 }

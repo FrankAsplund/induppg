@@ -12,6 +12,7 @@ function App() {
       <nav>
         <Navbar />
       </nav>
+
       <Outlet />
       <footer>
         <Footer />

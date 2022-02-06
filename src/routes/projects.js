@@ -10,16 +10,8 @@ import teamAIndex from "../components/assets/teamAIndex.JPG";
 
 function Projects() {
   return (
-    <div>
-      <div
-        style={{
-          backgroundImage: `url(${background1})`,
-          minWidth: "90vw",
-          minHeight: "100vh",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+    <div className="backgroundpic">
+      <div>
         <h1 style={{ color: "white", padding: "2rem" }}>
           Här är ett par av mina projekt
         </h1>

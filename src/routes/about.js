@@ -13,6 +13,7 @@ import Contactcard from "../components/Contactcard/Contactcard";
 function About() {
   return (
     <div
+      className="backgroundpic"
       style={{
         backgroundImage: `url(${background1})`,
         minWidth: "90vw",
